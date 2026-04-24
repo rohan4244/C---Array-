@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+struct student {
+    int id;
+    int age;
+    float cgpa;
+};
+
+int main() {
+    struct student s[3];
+    int i;
+
+    for(i=0; i<3; i++) {
+        printf("Enter data for Student %d (ID Age CGPA): ", i + 1);
+        scanf("%d %d %f", &s[i].id, &s[i].age, &s[i].cgpa);
+    }
+
+    printf("\n--- Student Records ---\n");
+    for(i=0; i<3; i++) {
+        printf("ID: %d | Age: %d | CGPA: %.1f\n", s[i].id, s[i].age, s[i].cgpa);
+    }
+
+    return 0;
+}
