@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main ( ) {
+	struct student {
+		int id;
+	};
+	struct student S1,S2;
+	S1.id = 10;
+S2=S1; //	S1 = S2; incorect 
+	printf("Student id is =%d", S2.id);
+return 0;
+}
+
