@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+struct student {
+int id;
+};
+int main () {
+
+struct student s1,s2;
+
+s1.id=55;
+s2.id=s1.id;
+s1.id=10;
+printf("%d  %d", s1.id, s2.id);
+return 0;
+}
